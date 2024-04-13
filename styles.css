@@ -75,7 +75,7 @@ nav>ul>li>a:hover{
     margin-top: 30px;
 }
 .about{
-    background-color: white;
+    background-color: black;
     max-width: 100%;
     height: 90vh;
     display: flex;
@@ -221,7 +221,7 @@ nav>ul>li>a:hover{
     color: rgb(189, 161, 7);
 }
 .contact{
-    background-color: rgba(2, 4, 32, 0.726);
+    background-color: black;
     max-width: 100%;
     height: 90vh;
     display: flex;
@@ -245,7 +245,7 @@ input{
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: rgba(2, 4, 32, 0.575);;
+    background-color: white;
 }
 input:focus{
     border: none;
@@ -255,10 +255,10 @@ textarea{
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: rgba(2, 4, 32, 0.575);;
+    background-color: white;
 }
 form>button{
-    background-color: red;
+    background-color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
