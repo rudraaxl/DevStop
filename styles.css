@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+    scroll-behavior: smooth;
+    
+}
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    width: 100%;
+
+    height: 100px;
+    background-color: black;
+    padding: 10px 60px;
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+   
+}
+nav>ul>li>a{
+    text-decoration: none;
+    transition: all ease 1s;
+    color:#FF3AC7;
+    font-size: x-large;
+    font-weight: 400;
+    background-color: black;
+}
+nav>ul>li>a:hover{
+    color: #FE8A12
+}
+.intro{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    background-color: black;
+}
+.intro>img{
+    height: 250px;
+    margin: 10px;
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.intro>h1{
+    font-size: 4vw;
+}
+.intro>button{
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.about{
+    background-color: white;
+    max-width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 4vw; */
+    gap:  1vw;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw 4vw;
+    gap:  1vw;
+}
+#head{
+    font-size: 2.3vw;
+    font-weight: bolder;
+}
+#base{
+    text-align: center;
+    font-size: 1.25vw;
+}
+.skill-container{
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.front{
+    background-color: black;
+    padding: 20px 60px;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:white;
+}
+.box{
+    background-color: chartreuse;
+    border-radius: 60px;
+    padding: 18px 50px;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 30vw;
+    height: 40vh;    
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap:  10px;
+}
+.card>h2{
+    align-items: flex-start;
+}
+.about-me2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  50px;
+}
+.blue{
+    background-color: rgb(4, 78, 189);
+}
+.yellow1{
+    background-color: rgb(189, 161, 7);
+}
+.experience {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3vw;
+    gap: 2vw;
+    color: white;
+}
+
+.card2 {
+    height: auto; /* Change height to auto to allow the card to adjust its height based on content */
+    width: 50%;
+    background-image: linear-gradient(to bottom right, #ff8c00, #ff00ff); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vw;
+    gap: 1vw;
+    color: white;
+}
+
+.card2>i {
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card3 {
+    height: auto; /* Change height to auto to allow the card to adjust its height based on content */
+    width: 50%;
+    background-image: linear-gradient(to bottom right, #ff8c00, #ff00ff); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vw;
+    gap: 1vw;
+    color: white;
+}
+
+.card3>i {
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exp-item {
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+
+/* Additional styles to ensure responsiveness */
+@media (min-width: 768px) {
+    .card2 {
+        width: 50%; /* Adjust width for larger screens */
+    }
+}
+
+.red{
+    color: rgb(245, 4, 44);
+}
+.blue1{
+    color: rgb(41, 15, 212);
+}
+.yellow2{
+    color: rgb(189, 161, 7);
+}
+.contact{
+    background-color: rgba(2, 4, 32, 0.726);
+    max-width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw;
+    gap:  1vw;
+}
+form{
+    height: 80%;
+    width: 40%;
+    gap: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form>div{
+    width: 100%;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(2, 4, 32, 0.575);;
+}
+input:focus{
+    border: none;
+}
+textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(2, 4, 32, 0.575);;
+}
+form>button{
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 1vw;
+}
+.social{
+    display: flex;
+    font-size: 3vw;
+    gap: 2vw;
+}
+.social>a>i:hover{
+    color: rgba(255, 255, 255, 0.589);
+}
+.gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the gradient is behind other content */
+}
+
+
+

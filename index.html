@@ -3,46 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>w</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Problems</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <nav id="nav">
+        <h1>vitchcraft</h1>
+        <ul>
+            <li><a href="#nav">Home</a></li>
+            <li><a href="#about">Problems</a></li>
+            <li><a href="#experience">Discussions</a></li>
+            <li><a href="#contact">Profile</a></li>
+        </ul>
+    </nav>
     <main>
-        <section>
-            <h2>Featured Problems</h2>
-            <div class="problem">
-                <h3>Problem Title</h3>
-                <p>Description of the problem...</p>
-                <a href="#">View Problem</a>
+        <div class="front">
+            <h1>Welcome to</h1>
+            <h3>kaleshi chori's website</h3>
+        </div>
+        <div id="experience" class="experience">    
+            <h2>Featured Problems of the Day</h2>
+            <div class="exp-item">
+                <div class="card2">
+                    <h2>Data Structures and Algorithms</h2>
+                    <h4>13 Chapters</h4>
+                    <h4>149 items</h4>
+                    <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="card3" onmouseover="changeGradient()" onmouseout="resetGradient()">
+                    <h2>Problem 123 </h2>
+                    <h4>6 Chapters</h4>
+                    <h4>78 items</h4>
+                    <i class="fa-regular fa-circle-play"></i>
+                </div>
             </div>
-            <!-- Add more problem sections here -->
-        </section>
-
-        <section>
-            <h2>Latest Discussions</h2>
-            <div class="discussion">
-                <h3>Discussion Title</h3>
-                <p>Summary of the discussion...</p>
-                <a href="#">Join Discussion</a>
+        </div>
+        
+        <div class="intro">
+            <h1>Today's Problem</h1>
+            <h3>I am a creative and driven software developer with 5 years of experience building web and mobile applications.</h3>
+            <button>Contact Me😭</button>
+        </div>
+        <div id="about" class="about">
+            <div class="about-me">
+            <h2 id="head">About Me</h2>
+            <h3 id="base">I am a creative and driven software developer with 5 years of experience building web and mobile applications. <br>
+                I have a passion for solving complex problems and creating intuitive and user-friendly interfaces.
+                </h3>
             </div>
-            <!-- Add more discussion sections here -->
-        </section>
+            <div class="about-me2">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <div class="card">
+                    <div class="box"><i class="fa-brands fa-html5"></i></div>
+                    <h2>Html</h2>
+                    <p>I have a strong foundation in HTML and can build well-structured and semantically correct websites.</p>
+                </div>
+                <div class="card">
+                    <div class="box blue"><i class="fa-brands fa-css3"></i></div>
+                    <h2>CSS</h2>
+                    <p>I have a strong understanding of CSS and can create visually appealing and responsive layouts.</p>
+                </div>
+                <div class="card">
+                    <div class="box yellow1"><i class="fa-brands fa-js"></i></div>
+                    <h2>Javascript</h2>
+                    <p>I have a strong understanding of JavaScript and have experience building web applications using various libraries and frameworks such as React and Angular</p>
+                </div>
+            </div>
+        </div> 
+        </div>
+        
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form action="/index.html">
+                <div class="name">
+                <label for="Name">Name:</label><br>
+                <input type="text" name="name" id="name" placeholder="John"/><br/>
+            </div>
+            <div class="email">
+                <label for="Email">E-mail:</label><br />
+                <input type="email" name="email" id="email" placeholder="Johniilm@gmail.com" ><br />
+            </div>
+            <div class="textarea">
+                <label for="Message">Message:</label><br />
+                <textarea name="message" id="msg" rows="6" cols="35"  placeholder="Your message here..."></textarea><br />
+            </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; </p>
+        <h3>Created by Akshay@Gdsc iilm</h3>
+        <h2 class="gmail">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Akshaytyagi482@gmail.com </span>
+        </h2>
+        <h3>Or you can find me on social media</h3>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="problem">
+            <div class="problem-title">Problem 1</div>
+            <div class="problem-description">
+                Write a function that takes two numbers as input and returns their sum.
+            </div>
+        </div>
+    
+        <div class="problemd">
+            <div class="problem-title">Problem 2</div>
+            <div class="problem-description">
+                Write a function to check if a given number is prime.
+            </div>
+        </div>
+    
+        <!-- Text box for typing answers -->
+        <textarea id="answer-input" placeholder="Type your answer here..."></textarea>
+    
+        <!-- Button to submit answers -->
+        <button id="submit-btn">Submit</button>
+        <div class="gradient"></div>
     </footer>
 </body>
 </html>
